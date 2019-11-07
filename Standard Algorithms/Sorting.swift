@@ -13,10 +13,10 @@ class Sorting {
         var array =  data
         for i in 0..<array.count {
             for j in 0..<array.count-2 {
-                if array[j-1]>array[j] {
-                    let temp = array[j-1]
-                    array[j-1] = array[j]
-                    array[j] = temp
+                if array[j]>array[j+1] {
+                    let temp = array[j]
+                    array[j] = array[j+1]
+                    array[j+1] = temp
                 }
                 
             }
