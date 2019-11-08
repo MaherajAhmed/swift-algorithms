@@ -24,10 +24,22 @@ class Sorting {
         }
        return array
     }
-}
+    
+    func MergeSort (data: [Int]) -> [Int] {
+        if data.count/2 <= 1 {
+            return data
+        }
+        else {
+            let middleOflist = data.count/2
+            var leftofList = Array([(data[0..<middleOflist])])
+            var rightofList = Array([(data[middleOflist...data.count])])
+            var left = MergeSort(leftofList)
+            var right = MergeSort(rightofList)
+            return merge(left, right)
+            }
+        
+                
+            }
+        }
 
-//func MergeSort (data: [Int]) -> [Int] {
-//    let middleOflist = data.count/2
-//    var leftOfList = [(data[0..<middleOflist])]
-//    var rightOfList = [(data[middleOflist..<data.count])]
-//}
+
