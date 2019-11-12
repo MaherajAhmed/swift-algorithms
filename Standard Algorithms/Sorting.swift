@@ -11,7 +11,7 @@ import Foundation
 class Sorting {
     func bubbleSort(data: [Int]) -> [Int] {
         var array =  data
-        for i in 0..<array.count {
+        for _ in 0..<array.count {
             for j in 0..<array.count-2 {
                 if array[j]>array[j+1] {
                     let temp = array[j]
@@ -25,21 +25,52 @@ class Sorting {
        return array
     }
     
-    func MergeSort (data: [Int]) -> [Int] {
-        if data.count/2 <= 1 {
-            return data
+   func merge(left: [Int], right: [Int]) -> [Int] {
+       var leftCount = 0
+       var rightCount = 0
+       
+       var completeArray = [Int]()
+       
+       while leftCount < left.count && rightCount < right.count {
+           if left[leftCount] < right[rightCount]  {
+               completeArray.append(left[leftCount])
+               leftCount += 1
+           } else if left[leftCount] > right[rightCount] {
+               completeArray.append(right[rightCount])
+               rightCount += 1
+           } else {
+               completeArray.append(left[leftCount])
+               leftCount += 1
+               completeArray.append(right[rightCount])
+               rightCount += 1
+           }
+       }
+       
+       while leftCount < left.count {
+           completeArray.append(left[leftCount])
+           leftCount += 1
+       }
+       
+       while rightCount < right.count {
+           completeArray.append(right[rightCount])
+           rightCount += 1
+       }
+       return completeArray
+   }
+   
+   func mergeSort(array: [Int]) -> [Int] {
+
+       if array.count == 1 {
+           return array
+       }
+       let middle = array.count / 2
+       let left = mergeSort(array: Array(array[0..<middle]))
+       let right = mergeSort(array: Array(array[middle..<array.count]))
+       
+       return merge(left: left, right: right)
+       
         }
-        else {
-            let middleOflist = data.count/2
-            var leftofList = Array([(data[0..<middleOflist])])
-            var rightofList = Array([(data[middleOflist...data.count])])
-            var left = MergeSort(leftofList)
-            var right = MergeSort(rightofList)
-            return merge(left, right)
-            }
-        
-                
-            }
-        }
+    }
+
 
 
