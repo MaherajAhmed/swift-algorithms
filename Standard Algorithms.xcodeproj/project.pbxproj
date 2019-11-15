@@ -12,6 +12,9 @@
 		DF1AFEBC2371A2E70056A795 /* SortingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1AFEBB2371A2E70056A795 /* SortingTest.swift */; };
 		DF1AFEBE2371A3CE0056A795 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1AFEBD2371A3CE0056A795 /* Sorting.swift */; };
 		DF1AFEBF2371A3DC0056A795 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1AFEBD2371A3CE0056A795 /* Sorting.swift */; };
+		DFDDDE6D237EADBD00E2AE24 /* UnknownTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDDDE6C237EADBD00E2AE24 /* UnknownTest.swift */; };
+		DFDDDE72237EAF4100E2AE24 /* Unknown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDDDE71237EAF4100E2AE24 /* Unknown.swift */; };
+		DFDDDE73237EAF4100E2AE24 /* Unknown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDDDE71237EAF4100E2AE24 /* Unknown.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +37,8 @@
 		DF1AFEB72371A2020056A795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF1AFEBB2371A2E70056A795 /* SortingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingTest.swift; sourceTree = "<group>"; };
 		DF1AFEBD2371A3CE0056A795 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
+		DFDDDE6C237EADBD00E2AE24 /* UnknownTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownTest.swift; sourceTree = "<group>"; };
+		DFDDDE71237EAF4100E2AE24 /* Unknown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unknown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,7 @@
 			children = (
 				DF1AFEA823719C550056A795 /* main.swift */,
 				DF1AFEBD2371A3CE0056A795 /* Sorting.swift */,
+				DFDDDE71237EAF4100E2AE24 /* Unknown.swift */,
 			);
 			path = "Standard Algorithms";
 			sourceTree = "<group>";
@@ -87,6 +93,7 @@
 				DF1AFEB52371A2020056A795 /* StandardAlgorithmsTest.swift */,
 				DF1AFEB72371A2020056A795 /* Info.plist */,
 				DF1AFEBB2371A2E70056A795 /* SortingTest.swift */,
+				DFDDDE6C237EADBD00E2AE24 /* UnknownTest.swift */,
 			);
 			path = StandardAlgorithmsTest;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF1AFEBE2371A3CE0056A795 /* Sorting.swift in Sources */,
+				DFDDDE72237EAF4100E2AE24 /* Unknown.swift in Sources */,
 				DF1AFEA923719C550056A795 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFDDDE73237EAF4100E2AE24 /* Unknown.swift in Sources */,
+				DFDDDE6D237EADBD00E2AE24 /* UnknownTest.swift in Sources */,
 				DF1AFEBF2371A3DC0056A795 /* Sorting.swift in Sources */,
 				DF1AFEBC2371A2E70056A795 /* SortingTest.swift in Sources */,
 				DF1AFEB62371A2020056A795 /* StandardAlgorithmsTest.swift in Sources */,
